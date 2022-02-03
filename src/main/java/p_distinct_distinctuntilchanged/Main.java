@@ -1,4 +1,4 @@
-package n_take_skip_takewhile_skipwhile.o_distinct_distinctuntilchanged;
+package p_distinct_distinctuntilchanged;
 
 import io.reactivex.Observable;
 

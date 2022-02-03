@@ -1,4 +1,4 @@
-package p_repeat_scan;
+package q_repeat_scan;
 
 import io.reactivex.Observable;
 
