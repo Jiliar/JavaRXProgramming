@@ -6,8 +6,6 @@ import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.observers.ResourceObserver;
-
-import java.awt.*;
 import java.util.concurrent.TimeUnit;
 
 import static java.lang.Thread.sleep;
@@ -34,6 +32,7 @@ public class Main {
         disposable.dispose();
         pause(3000);
     }
+
     public static void handleDisposableInObserver(){
         System.out.println("--- Disposable In Observer ---");
         Observable<Integer> observable = Observable.just(1,2,3,4,5);
@@ -64,6 +63,7 @@ public class Main {
         };
         observable.subscribe(observer);
     }
+
     public static void handleDisposableOutsideObserver() {
         System.out.println("--- Disposable Outside Observer ---");
         Observable<Integer> observable = Observable.just(1,2,3,4,5);
